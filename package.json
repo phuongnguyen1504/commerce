@@ -1,0 +1,28 @@
+{
+  "name": "new-shop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "setup": "evershop install",
+    "build": "evershop build",
+    "start": "evershop start",
+    "start:debug": "evershop start --debug",
+    "dev": "evershop dev",
+    "user:create": "evershop user:create",
+    "user:changePassword": "evershop user:changePassword",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "workspaces": [
+    "extensions/*"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@evershop/evershop": "^1.0.0",
+    "@evershop/productcomment": "^1.0.2",
+    "config": "^3.3.11",
+    "multer": "^1.4.3",
+    "sharp": "^0.33.3"
+  }
+}

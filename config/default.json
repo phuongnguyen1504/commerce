@@ -1,0 +1,45 @@
+{
+  "shop": {
+    "currency": "USD",
+    "language": "cn",
+    "weightUnit": "kg"
+  },
+  "catalog": {
+    "product": {
+      "image": {
+        "thumbnail": {
+          "width": 100,
+          "height": 100
+        },
+        "listing": {
+          "width": 300,
+          "height": 300
+        },
+        "single": {
+          "width": 500,
+          "height": 500
+        }
+      }
+    },
+    "showOutOfStockProduct": false
+  },
+  "system": {
+    "theme": "eve",
+    "extensions": [
+      //Minh co the tao extensions mở rộng ở root/extensions
+      //      {
+      //        "name": "productComment",
+      //        "resolve": "extensions/productComment",
+      //        "enabled": true,
+      //        "priority": 10
+      //      }
+      {
+        "name": "productcomment",
+        "resolve": "node_modules/@evershop/productcomment",
+        "enabled": true,
+        "priority": 10
+        // Smaller number means higher priority
+      }
+    ]
+  }
+}
